@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Act of Kindness</title>
+</head>
+<body>
+    <h1>Making someone happier each day!</h1>
+    <hr>
+    <br>
+    <a href="page2.html" target="_blank" title="Go to Shrek Page">
+        Create infinite fun!
+    </a>
+    <br>
+    <a href="page3.html" target="_blank" title="Go to Diddy Lab">
+        <b>Join the club!</b>
+    </a>
+    <br>
+    <a href="page4.html" target="_blank" title="Register">
+        Register
+    </a>
+    <br>
+    <h2>What is the purpose of this?</h2>
+    <h3>We just want to give you a smile. A random act of kindness some might say. Just press the button! It will give you a random act of kindness that you can do this holiday!</h3>
+
+    <button id="randomizeButton" style="background-color:black;color:greenyellow; width:250px; height: 50px; font-size: 20px; border-radius:5px;">Random Act of Kindness</button>
+    <h1 id="sentenceDisplay">Press the button</h1>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const randomizeButton = document.getElementById('randomizeButton');
+            const sentenceDisplay = document.getElementById('sentenceDisplay');
+
+            const sentences = [
+                "Pay for someone's coffee or meal.",
+                "Volunteer your time at a local charity or animal shelter.",
+                "Leave a positive note for a stranger to find.",
+                "Offer to help a neighbor with a chore or errand.",
+                "Donate blood or plasma.",
+                "Send a handwritten letter or card to a friend or family member.",
+                "Compliment a stranger on their outfit or hairstyle.",
+                "Hold the door open for someone.",
+                "Donate old clothes or toys to a charity.",
+                "Listen attentively to a friend or family member who needs to vent.",
+                
+            ];
+
+            randomizeButton.addEventListener('click', () => {
+                const randomIndex = Math.floor(Math.random() * sentences.length);
+                const randomSentence = sentences[randomIndex];
+
+                sentenceDisplay.textContent = randomSentence;
+            });
+        });
+    </script>
+</body>
+</html>

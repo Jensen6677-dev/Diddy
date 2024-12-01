@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .submit-button {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" value="SpongeBob">
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" value="Squarepants">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="SPants@gmail.com">
+
+        <label for="phone">Phone #:</label>
+        <input type="tel" id="phone" name="phone" value="(123)-456-7890">
+
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate">
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" value="1">
+
+        <label>Title:</label>
+        <input type="radio" id="mr" name="title" value="Mr.">
+        <label for="mr">Mr.</label>
+        <input type="radio" id="mrs" name="title" value="Mrs.">
+        <label for="mrs">Mrs.</label>
+        <input type="radio" id="phd" name="title" value="PhD.">
+        <label for="phd">PhD.</label>
+
+        <label for="payment">Payment:</label>
+        <select id="payment" name="payment">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="paypal">Paypal</option>
+            </select>
+
+        <label for="subscribe">Subscribe:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" checked>
+
+        <button type="reset">Reset</button>
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+</body>
+</html>
